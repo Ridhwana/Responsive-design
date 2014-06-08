@@ -4,8 +4,10 @@
         <title>Responsive Social Media</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap -->
-        <link href="css/styles.css" rel="stylesheet" media="screen">
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/li-scroller.css" rel="stylesheet" media="screen">
+        <link href="css/styles.css" rel="stylesheet" media="screen">
+
     </head>
     <body>
 
@@ -67,10 +69,21 @@
         <div id="people" data-bind="template: { name: 'personTemplate', foreach: people }"></div>
         <script id="personTemplate" type="text/x-jquery-tmpl">
             <div class="container">
-              <div class="row">
 
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="col-md-12" id="ticker01">
+                    <li><img class="img-responsive img-circle" src="css/images/beach.JPG"></li>
+                  	<li><img class="img-responsive img-circle" src="css/images/candy.JPG"></li>
+                  	<li><img class="img-responsive img-circle" src="css/images/silos.JPG"></li>
+                    <li><img class="img-responsive img-circle" src="css/images/pool.JPG"></li>
+                    	<!-- eccetera -->
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
                 <div class="col-md-4">
-                  <a href="#"><img class="img-responsive img-circle" src="../img/person.png"></a>
                   <h3 class="text-center" contenteditable="true" data-bind="value: name"></h3>
                   <h3 class="editable" data-bind="editable: name"></h3>
                 </div>
@@ -132,6 +145,6 @@
         <script src="js/jquery.tmpl.js"></script>
         <script src="js/knockout-2.1.0.js"></script>
         <script src="js/behavior.js"></script>
-
+        <script src="js/jquery.li-scroller.1.0.js"></script>
     </body>
 </html>

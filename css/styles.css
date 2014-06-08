@@ -3,3 +3,19 @@ footer{
   margin: 40px 0px;
   padding: 20px 0px;
 }
+
+img{
+  width: 180px;
+  height: 180px;
+  padding: 20px;
+  vertical-align: middle
+}
+
+.tickercontainer{
+  height: 200px;
+
+}
+
+.mask{
+  height: 180px;
+}
